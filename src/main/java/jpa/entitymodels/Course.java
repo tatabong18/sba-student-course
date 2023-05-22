@@ -1,10 +1,14 @@
 package jpa.entitymodels;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name = "courses")
+@Table(name = "Course")
 public class Course implements Serializable {
     private static final long serialVersionUID = 1L;
 

@@ -1,4 +1,5 @@
 package jpa.dao;
+
 import jpa.entitymodels.Course;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

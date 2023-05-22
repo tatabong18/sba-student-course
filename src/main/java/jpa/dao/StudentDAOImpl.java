@@ -1,4 +1,5 @@
 package jpa.dao;
+
 import jpa.entitymodels.Course;
 import jpa.entitymodels.Student;
 import org.hibernate.Hibernate;
@@ -7,7 +8,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

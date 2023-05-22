@@ -1,13 +1,15 @@
 package jpa.entitymodels;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "student")
 public class Student implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -65,6 +67,7 @@ public class Student implements Serializable {
     public void setsCourses(List<Course> sCourses) {
         this.sCourses = sCourses;
     }
+
     public void addCourse(Course course) {
         this.sCourses.add(course);
     }
@@ -78,6 +81,7 @@ public class Student implements Serializable {
                 ", sCourses=" + sCourses +
                 '}';
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(sCourses, email, name, password);
